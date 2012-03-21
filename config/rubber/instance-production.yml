@@ -4,7 +4,7 @@
   external_host: ec2-50-19-36-20.compute-1.amazonaws.com
   external_ip: 50.19.36.20
   image_id: ami-7000f019
-  image_type: m1.small
+  image_type: t1.micro
   instance_id: i-e7d2ae83
   internal_host: ip-10-111-53-130.ec2.internal
   internal_ip: 10.111.53.130
