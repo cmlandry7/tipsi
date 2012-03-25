@@ -1,7 +1,205 @@
+/* ***************************************************
+   **    GENERAL STYLE
+   *************************************************** */
+
+/*  DARK PURPLE: #3C0F2E  */
+/*  EGG SHELL: #F8F4EF	*/
+/*	RED-1: #A21417  */
+/*	RED-2: #6C050C  */
+/*	RED-3: #400424  */
+/*	RED-4: #6B040B  */
+
 body {
-	background-color: #3F002F;
+	background-image: url('/images/wine-background.jpg');
+	background-repeat: repeat-x;
+	background-size: cover;
+	background-attachment: fixed;
 	text-align: center;
+	font-family: arial;
+	color: #3C0F2E;
 }
 
-.home_image {
+a {
+	text-decoration: none;
+	color: #AD1048;
+}
+
+.color-link {
+	color: #A21417;
+}
+
+.main-container {
+	width:960px;
+	margin: auto;
+	margin-top: 0;
+}
+
+.content-background {
+	opacity: 0.9;
+	background-image: url('/images/wavy-beige.png');
+	min-height: 600px;
+}
+
+.content-container {
+	margin: 0 20px;
+	text-align: left;
+}
+
+.header {
+	text-align: left;
+	padding: 10px 0;
+	border-bottom: 1px dotted #3C0F2E;
+}
+
+.header-link {
+	float: right;
+	margin: 15px 0 0 15px;
+	color: #3C0F2E;
+}
+
+.footer {
+	background-color: #3C0F2E;
+	padding: 15px;
+}
+
+.footer-link {
+	color: #F8F4EF;
+	margin: 0 10px;
+}
+
+.footer-link:hover {
+	text-decoration: underline;
+}
+
+.clear {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.tipsi-font {
+	font-family: "Tipsi", arial;
+}
+
+.page-content {
+	width: 80%;
+	float: left;
+	margin-left: 30px;
+}
+
+/* ***************************************************
+   **    IMAGES
+   *************************************************** */
+
+.logo {
+	height: 50px;
+}
+
+.app-store {
+	float: right;
+	height: 50px;
+}
+
+.iphone-image {
+	width: 400px;
+	float: left;
+}
+
+/* ***************************************************
+   **    HOME PAGE
+   *************************************************** */
+
+.headline {
+	font-size: 60px;
+	text-align: center;
+	margin: 30px;
+}
+
+.home-content {
+	float: left;
+	width: 50%;
+}
+
+.home-content h2 {
+	text-align: center;
+	font-size: 36px;
+}
+
+/* ***************************************************
+   **    NAVIGATION LINKS
+   *************************************************** */
+
+.nav-container {
+	float: left;
+	margin: 20px 0 0 10px;
+}
+
+.home-navigation .nav-container {
+	margin: 0 0 0 30px;
+}
+
+.nav-padding {
+	float: left;
+	clear: left;
+	height: 36px;
+	margin-top: 5px;
+}
+
+.home-navigation .nav-padding { 
+	height: 48px;
+	margin-top: 10px; 
+}
+
+.nav-button {
+	float: left;
+	width: 10px;
+	height: 100%;
+}
+
+a.nav-link {
+	padding: 10px;
+	line-height: 36px;
+	color: #3C0F2E;
+}
+
+a.nav-link.white {
+	color: #F8F4EF;
+}
+
+a.nav-link:hover {
+	text-decoration: underline;
+}
+
+.home-navigation a.nav-link { 
+	font-size: 24px; 
+	line-height: 48px;
+}
+
+.red-1 {
+	background-color: #A21417;
+}
+
+.red-2 {
+	background-color: #6C050C;
+}
+
+.red-3 {
+	background-color: #400424;
+}
+
+.red-4 {
+	background-color: #6B040B;
+}
+
+.subheader {
+	margin-top: 20px;
+	float: right;
+	font-size: 18px;
+}
+
+.subheader-link {
+	border-right: 1px solid #3C0F2E;
+	padding: 0 10px;
 }

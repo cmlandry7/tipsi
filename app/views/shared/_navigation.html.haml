@@ -1,0 +1,13 @@
+.nav-container
+    %div{ :class => "#{@nav_page == 1 ? "nav-padding red-1" : "nav-padding"}" }
+        .nav-button.red-1
+        %a{:href => "/philosophy", :class => "#{@nav_page == 1 ? "nav-link white" : "nav-link"}" } About Tipsi
+    %div{ :class => "#{@nav_page == 2 ? "nav-padding red-2" : "nav-padding"}" }
+        .nav-button.red-2
+        %a{ :href => "/app", :class => "#{@nav_page == 2 ? "nav-link white" : "nav-link"}" } Take a tour
+    %div{ :class => "#{@nav_page == 3 ? "nav-padding red-3" : "nav-padding"}" }
+        .nav-button.red-3
+        %a{ :href => "/taste", :class => "#{@nav_page == 3 ? "nav-link white" : "nav-link"}" } Taste analysis
+    %div{ :class => "#{@nav_page == 4 ? "nav-padding red-4" : "nav-padding"}" }
+        .nav-button.red-4
+        %a{ :href => "/community", :class => "#{@nav_page == 4 ? "nav-link white" : "nav-link"}" } Community
