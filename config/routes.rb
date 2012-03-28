@@ -8,6 +8,7 @@ Tipsi::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
+  match "/about" => "home#about", :as => :about
   match "/philosophy" => "home#philosophy", :as => :philosophy
   match "/sommeliers" => "home#sommeliers", :as => :sommeliers
   match "/app" => "home#app", :as => :app
@@ -16,7 +17,7 @@ Tipsi::Application.routes.draw do
   match "/community" => "home#community", :as => :community
   match "/legal" => "home#legal", :as => :legal
   match "/press" => "home#press", :as => :press
-
+  
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)

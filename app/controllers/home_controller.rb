@@ -1,6 +1,12 @@
 class HomeController < ApplicationController
+    # before_filter  :authorize, :except => :index
+    
     def index
         @title = "Welcome to Tipsi"
+    end
+    
+    def about
+        @title = "About"
     end
 
     def sommeliers
