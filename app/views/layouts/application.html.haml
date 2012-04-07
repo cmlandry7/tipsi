@@ -14,8 +14,8 @@
                 .header
                     %a{ :href => "/" }
                         =image_tag( "tipsi-logo.png", :class => "logo" )
-                    = link_to "Login", root_path, { :class => "header-link" }
-                    = link_to "Sign Up", root_path, { :class => "header-link" }
+                    / = link_to "Login", root_path, { :class => "header-link" }
+                    / = link_to "Sign Up", root_path, { :class => "header-link" }
                     %a{ :href => "/app"}
                         =image_tag( "app-store-badge.png", :class => "app-store" )
                 = yield

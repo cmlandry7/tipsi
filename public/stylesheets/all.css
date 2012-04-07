@@ -103,7 +103,7 @@ a {
 }
 
 .page-content {
-	width: 80%;
+	width: 75%;
 	float: left;
 	margin-left: 30px;
 }
@@ -152,7 +152,7 @@ a {
 
 .nav-container {
 	float: left;
-	margin: 20px 0 0 10px;
+	margin: 10px 0 0 10px;
 }
 
 .home-navigation .nav-container {
@@ -164,6 +164,12 @@ a {
 	clear: left;
 	height: 36px;
 	margin-top: 5px;
+}
+
+.selected {
+	border-top: 1px solid #3C0F2E;
+	border-bottom: 1px solid #3C0F2E;
+	width: 150px;
 }
 
 .home-navigation .nav-padding { 
@@ -181,6 +187,31 @@ a.nav-link {
 	padding: 10px 20px 10px 10px;
 	line-height: 36px;
 	color: #3C0F2E;
+}
+
+a.nav-link-2 {
+	padding: 0 20px 0 10px;
+	line-height: 36px;
+	color: #3C0F2E;
+	float: left;
+	clear: left;
+	height: 36px;
+	margin-top: 5px;
+}
+
+.mini-nav-container {
+	float: left;
+	clear: left;
+	border-bottom: 1px solid #3C0F2E;
+	width: 150px;
+	padding: 10px 0;
+}
+
+a.mini-nav-link {
+	display: block;
+	text-align: right;
+	font-size: 12px;
+	margin: 5px 0;
 }
 
 a.nav-link.white {
@@ -221,4 +252,72 @@ a.nav-link:hover {
 .subheader-link {
 	border-right: 1px solid #3C0F2E;
 	padding: 0 10px;
+}
+
+/* ***************************************************
+   **    SOMMELIER PAGES
+   *************************************************** */
+.sommelier-content {
+	float: left;
+	width: 60%;
+	margin-left: 100px;
+}
+
+.sommelier-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.sommelier-list li {
+	margin-bottom: 5px;
+}
+
+.sommelier-pic {
+	float: left;
+	margin: 25px 0 10px 0;
+}
+
+.sommelier-info {
+	float: left;
+	text-align: center;
+	margin: 15px 0 10px 65px;
+}
+
+.sommelier-info h1 {
+	margin-bottom: 10px;
+}
+
+.sommelier-info h2 {
+	font-style: italic;
+	font-size: 20px;
+	margin: 0;
+}
+
+.sommelier-questions {
+	clear: left;
+	padding-top: 5px;
+	margin-bottom: 20px;
+	border-top: 1px dotted #3C0F2E;
+	border-bottom: 1px dotted #3C0F2E;
+}
+
+.sommelier-questions h3, .sommelier-questions p {
+	font-size: 14px;
+}
+
+.sommelier-questions h3 {
+	font-style: italic;
+}
+
+.social-media {
+	text-align: center;
+}
+
+.social-media h3 {
+	margin-bottom: 0;
+}
+
+.social-button {
+	width: 75px;
+	margin: 20px;
 }

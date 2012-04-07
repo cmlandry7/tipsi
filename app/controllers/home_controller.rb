@@ -7,11 +7,12 @@ class HomeController < ApplicationController
     
     def about
         @title = "About"
+        @nav_page = 1
     end
 
     def sommeliers
         @title = "Sommeliers"
-        @nav_page = 1
+        @nav_page = 3
     end
 
     def vision
@@ -21,7 +22,7 @@ class HomeController < ApplicationController
 
     def taste
         @title = "Taste analysis"
-        @nav_page = 3
+        @nav_page = 4
     end
 
     def app

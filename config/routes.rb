@@ -1,5 +1,4 @@
 Tipsi::Application.routes.draw do
-  get "home/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -7,7 +6,14 @@ Tipsi::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
-
+  
+  match "/sommeliers/anani-lawson" => "sommeliers#anani_lawson"
+  match "/sommeliers/jesse-rodriguez" => "sommeliers#jesse_rodriguez"
+  match "/sommeliers/michael-scaffidi" => "sommeliers#michael_scaffidi"
+  match "/sommeliers/desmond-echaranni" => "sommeliers#desmond_echaranni"
+  match "/sommeliers/yoon-ha" => "sommeliers#yoon_ha"
+  match "/sommeliers/erik-johnson" => "sommeliers#erik_johnson"
+  
   match "/about" => "home#about", :as => :about
   match "/philosophy" => "home#philosophy", :as => :philosophy
   match "/sommeliers" => "home#sommeliers", :as => :sommeliers
