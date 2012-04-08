@@ -23,6 +23,7 @@ class HomeController < ApplicationController
     def taste
         @title = "Taste analysis"
         @nav_page = 4
+        @status = 1
     end
 
     def app

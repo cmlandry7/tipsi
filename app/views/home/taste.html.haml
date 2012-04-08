@@ -1,1 +1,23 @@
+/ Navigation and subheader links
 = render :partial => "shared/navigation"
+
+/ Page content
+.page-content.taste
+    = render :partial => "shared/taste_links"
+    %h1.taste Color: red v. white
+    .wine-image
+        = image_tag("red-wine.png", :style => "width: 250px;")
+    .question-container
+        %p.light {red pairs well with beef, whereas wine generally pairs well with seafood}
+        .question-content
+            %h1.light I'm in the mood for...
+            .radio-container
+                %input{ :type => "radio", :value => "red" } 
+                %span.radio-label Red
+            .radio-container
+                %input{ :type => "radio", :value => "white" } 
+                %span.radio-label White
+            .clear
+        %a.button{ :href => "/" } Next
+        
+        
