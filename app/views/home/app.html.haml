@@ -2,5 +2,21 @@
 = render :partial => "shared/navigation"
 
 / Page content
-.page-content
-    %h1 Tour the app
+.page-content-wide
+    %h1.app Tour the app
+    .callout-div-left
+        = image_tag( "app-summary-3.png", :class => "callout-1" )
+        .callout-text.one
+            %h4 View Title 1
+            %p More text
+    / %p More text
+    = image_tag( "app-shot-restaurants.png", :style => "width: 315px; display: inline;" )    
+    .callout-div-right
+        = image_tag( "app-summary-1.png", :class => "callout-2" )
+        .callout-text.two
+            %h4 View Title 2
+            %p More text
+        = image_tag( "app-summary-2.png", :class => "callout-3" )
+        .callout-text.three
+            %h4 View Title 3
+            %p More text

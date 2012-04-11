@@ -1,0 +1,18 @@
+/ Navigation and subheader links
+= render :partial => "shared/navigation"
+
+/ Page content
+.page-content.taste
+    = render :partial => "shared/taste_links"
+    .wine-image
+        = image_tag("red-wine.png", :style => "width: 220px;")
+    .question-container
+        %h1.taste Tannic/Earthy: bitter, dry, puckery feeling
+        %p.light 
+            { Tannins have almost no flavor, but cause a drying, astringent 
+            sensation in the mouth. Wines high in tannin are said to be tannic. }
+        .question-content
+            %h1.light Are you looking for a tannic wine?
+            .button-container
+                %a.button{ :href => "#{@next_url_1}" } Yes
+                %a.button{ :href => "#{@next_url_2}" } No
