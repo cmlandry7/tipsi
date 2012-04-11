@@ -1,0 +1,16 @@
+/ Navigation and subheader links
+= render :partial => "shared/navigation"
+
+/ Page content
+.page-content.taste
+    = render :partial => "shared/taste_links"
+    .wine-image
+        = image_tag("red-wine.png", :style => "width: 220px;")
+    .question-container
+        %h1.taste Body: weight and texture of the wine
+        %p.light { sometimes described as "mouth feel", body describes how thick or thin the wine feels in your mouth }
+        .question-content
+            %h1.light Full or soft bodied?
+            .button-container
+                %a.button{ :href => "#{@next_url_1}" } Full
+                %a.button{ :href => "#{@next_url_2}" } Soft

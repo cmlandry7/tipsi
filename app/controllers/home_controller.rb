@@ -7,21 +7,25 @@ class HomeController < ApplicationController
     
     def about
         @title = "About"
+        @nav_page = 1
+        @sub_page = 1
     end
 
     def sommeliers
         @title = "Sommeliers"
-        @nav_page = 1
+        @nav_page = 3
     end
 
     def vision
         @title = "Vision"
         @nav_page = 1
+        @sub_page = 3
     end
 
     def taste
         @title = "Taste analysis"
-        @nav_page = 3
+        @nav_page = 4
+        @status = 1
     end
 
     def app
@@ -37,6 +41,7 @@ class HomeController < ApplicationController
     def philosophy
         @title = "Philosophy"
         @nav_page = 1
+        @sub_page = 2
     end
 
     def press
