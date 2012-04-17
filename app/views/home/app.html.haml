@@ -4,19 +4,20 @@
 / Page content
 .page-content-wide
     %h1.app Tour the app
+    %h4.app ...coming in May
     .callout-div-left
-        = image_tag( "app-summary-3.png", :class => "callout-1" )
-        .callout-text.one
-            %h4 View Title 1
-            %p More text
+        = image_tag( "app-summary-3.png", :id => "callout-1" )
+        .callout-text#one
+            %h4 Pick a Pairing
+            %p Get the perfect wine every time, tailored to your meal choice and personal taste.
     / %p More text
-    = image_tag( "app-shot-restaurants.png", :style => "width: 315px; display: inline;" )    
+    = image_tag( "app-shot-restaurants.png", :style => "width: 315px; display: inline;", :id => "app-image" )    
     .callout-div-right
-        = image_tag( "app-summary-1.png", :class => "callout-2" )
-        .callout-text.two
-            %h4 View Title 2
-            %p More text
-        = image_tag( "app-summary-2.png", :class => "callout-3" )
-        .callout-text.three
-            %h4 View Title 3
-            %p More text
+        = image_tag( "app-summary-2.png", :id => "callout-2" )
+        .callout-text#two
+            %h4 Personalized Recommendations
+            %p Selected from your preferences.
+        = image_tag( "app-summary-2.png", :id => "callout-3" )
+        .callout-text#three
+            %h4 View your Cellar
+            %p Add wines to your cellar to always remember your favorites!

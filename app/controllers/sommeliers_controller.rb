@@ -14,6 +14,12 @@ class SommeliersController < ApplicationController
         @title = "Will Costello"
     end
 
+    def christopher_hoel
+        @nav_page = 3
+        @sub_page = 3
+        @title = "Chris Hoel"
+    end
+
     def jesse_rodriguez
         @nav_page = 3
         @sub_page = 3
@@ -37,7 +43,7 @@ class SommeliersController < ApplicationController
 
     def erik_johnson
         @nav_page = 3
-        @sub_page = 7
+        @sub_page = 4
     end
 
 end
