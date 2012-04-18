@@ -17,14 +17,11 @@
         %div{ :class => "mini-nav-container" }
             %a{ :href => "/sommeliers/anani-lawson", :class => "#{@sub_page == 1 ? "mini-nav-link bold" : "mini-nav-link"}" } Anani Lawson
             %a{ :href => "/sommeliers/will-costello", :class => "#{@sub_page == 2 ? "mini-nav-link bold" : "mini-nav-link"}" } Will Costello
-            %a{ :href => "/sommeliers/jesse-rodriguez", :class => "#{@sub_page == 3 ? "mini-nav-link bold" : "mini-nav-link"}" } Jesse Rodriguez
-            %a{ :href => "/sommeliers/michael-scaffidi", :class => "#{@sub_page == 4 ? "mini-nav-link bold" : "mini-nav-link"}" } Michael Scaffidi
-            %a{ :href => "/sommeliers/desmond-echaranni", :class => "#{@sub_page == 5 ? "mini-nav-link bold" : "mini-nav-link"}" } Desmond Echavarri
-            %a{ :href => "/sommeliers/yoon-ha", :class => "#{@sub_page == 6 ? "mini-nav-link bold" : "mini-nav-link"}" } Yoon Ha
-            %a{ :href => "/sommeliers/erik-johnson", :class => "#{@sub_page == 7 ? "mini-nav-link bold" : "mini-nav-link"}" } Erik Johnson
+            %a{ :href => "/sommeliers/christopher-hoel", :class => "#{@sub_page == 3 ? "mini-nav-link bold" : "mini-nav-link"}" } Christopher Hoel
+            %a{ :href => "/sommeliers/erik-johnson", :class => "#{@sub_page == 4 ? "mini-nav-link bold" : "mini-nav-link"}" } Erik Johnson
     - else   
         .nav-padding
             %a{ :href => "/sommeliers", :class => "nav-link"} Our sommeliers
     .clear
-    %div{ :class => "#{@nav_page == 4 ? "nav-padding selected" : "nav-padding"}" }
-        %a{ :href => "/taste", :class => "#{@nav_page == 4 ? "nav-link bold" : "nav-link"}" } Taste analysis
+    / %div{ :class => "#{@nav_page == 4 ? "nav-padding selected" : "nav-padding"}" }
+    /     %a{ :href => "/taste", :class => "#{@nav_page == 4 ? "nav-link bold" : "nav-link"}" } Taste analysis

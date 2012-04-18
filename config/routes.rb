@@ -85,6 +85,7 @@ Tipsi::Application.routes.draw do
   
   match "/sommeliers/anani-lawson" => "sommeliers#anani_lawson"
   match "/sommeliers/will-costello" => "sommeliers#will_costello"
+  match "/sommeliers/christopher-hoel" => "sommeliers#christopher_hoel"
   match "/sommeliers/jesse-rodriguez" => "sommeliers#jesse_rodriguez"
   match "/sommeliers/michael-scaffidi" => "sommeliers#michael_scaffidi"
   match "/sommeliers/desmond-echaranni" => "sommeliers#desmond_echaranni"
