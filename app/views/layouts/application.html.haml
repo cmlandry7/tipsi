@@ -5,7 +5,6 @@
     %link{ :href => "/favicon.ico", :rel => "shortcut icon", :type => "image/ico" }
     = stylesheet_link_tag "all"
     = javascript_include_tag 'jquery-1.7.2.js', 'application.js'
-    / = javascript_include_tag 'jquery-1.7.2.js'
     = csrf_meta_tag
 %head
 %body   
@@ -22,10 +21,10 @@
                 = yield
                 .clear
         .footer
-            %a{ :class => "footer-link", :href => "mailto:careers@tipsi.com" } Careers
+            / %a{ :class => "footer-link", :href => "mailto:careers@tipsi.com" } Careers
             %a{ :class => "footer-link", :href => "/app" } Store
-            %a{ :class => "footer-link", :href => "mailto:partnerships@tipsi.com" } Partner
-            %a{ :class => "footer-link", :href => "mailto:contact@tipsi.com" } Contact
-            %a{ :class => "footer-link", :href => "/press" } Press
+            / %a{ :class => "footer-link", :href => "mailto:partnerships@tipsi.com" } Partner
+            / %a{ :class => "footer-link", :href => "mailto:contact@tipsi.com" } Contact
+            / %a{ :class => "footer-link", :href => "/press" } Press
             %a{ :class => "footer-link", :href => "/legal", :target => 'blank' } Legal
             = image_tag( "light-icon.png", :class => "icon")
