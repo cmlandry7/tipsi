@@ -1,0 +1,27 @@
+.nav-container
+    - if @nav_page == 1
+        %div{ :class => "nav-padding selected" }
+            %a{:href => "/about", :class => "nav-link bold" } About Tipsi
+        %div{ :class => "mini-nav-container" }
+            %a{ :href => "/about", :class => "#{@sub_page == 1 ? "mini-nav-link bold" : "mini-nav-link"}" } About
+            %a{ :href => "/philosophy", :class => "#{@sub_page == 2 ? "mini-nav-link bold" : "mini-nav-link"}" } Philosophy
+            %a{ :href => "/vision", :class => "#{@sub_page == 3 ? "mini-nav-link bold" : "mini-nav-link"}" } Vision
+    - else   
+        .nav-padding
+            %a{:href => "/about", :class => "nav-link" } About Tipsi
+    %div{ :class => "#{@nav_page == 2 ? "nav-padding selected" : "nav-padding"}" }
+        %a{ :href => "/app", :class => "#{@nav_page == 2 ? "nav-link bold" : "nav-link"}" } Take a tour
+    - if @nav_page == 3
+        %div{ :class => "nav-padding selected" }
+            %a{ :href => "/sommeliers", :class => "nav-link bold"} Our sommeliers
+        %div{ :class => "mini-nav-container" }
+            %a{ :href => "/sommeliers/anani-lawson", :class => "#{@sub_page == 1 ? "mini-nav-link bold" : "mini-nav-link"}" } Anani Lawson
+            %a{ :href => "/sommeliers/will-costello", :class => "#{@sub_page == 2 ? "mini-nav-link bold" : "mini-nav-link"}" } Will Costello
+            %a{ :href => "/sommeliers/christopher-hoel", :class => "#{@sub_page == 3 ? "mini-nav-link bold" : "mini-nav-link"}" } Christopher Hoel
+            %a{ :href => "/sommeliers/erik-johnson", :class => "#{@sub_page == 4 ? "mini-nav-link bold" : "mini-nav-link"}" } Erik Johnson
+    - else   
+        .nav-padding
+            %a{ :href => "/sommeliers", :class => "nav-link"} Our sommeliers
+    .clear
+    / %div{ :class => "#{@nav_page == 4 ? "nav-padding selected" : "nav-padding"}" }
+    /     %a{ :href => "/taste", :class => "#{@nav_page == 4 ? "nav-link bold" : "nav-link"}" } Taste analysis

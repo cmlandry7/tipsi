@@ -1,2 +1,13 @@
-.home_image
-  = image_tag "tipsi.png"
+%h1.headline.tipsi-font
+    Drink smart.  Get 
+    %a{ :href => "/app", :class => "color-link" } Tipsi.
+
+= image_tag("iphone.png", :class => "iphone-image" )
+.home-content.tipsi-font
+    %h2 
+        Learn more about 
+        %a{ :href => "/app", :class => "color-link" } Tipsi, 
+        your personal sommelier.
+    .clear
+.home-navigation
+    = render :partial => "shared/navigation"
