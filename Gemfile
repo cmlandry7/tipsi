@@ -6,6 +6,7 @@ gem 'rails', '3.0.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql'
+gem 'pg'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -31,4 +32,3 @@ gem 'haml-rails'
 # group :development, :test do
 #   gem 'webrat'
 # end
-gem "rubber", "1.15.0"
