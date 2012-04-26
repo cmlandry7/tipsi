@@ -142,7 +142,7 @@ a.button:hover {
 .page-content-wide {
 	float: left;
 	width: 79%;
-	margin: 0 0 30px 30px;
+	margin: 0 0 30px 20px;
 	position: relative;
 	left: -80px;
 }
@@ -222,7 +222,7 @@ a img { border: none; }
 .selected {
 	border-top: 1px solid #3C0F2E;
 	border-bottom: 1px solid #3C0F2E;
-	width: 150px;
+	width: 160px;
 }
 
 .home-navigation .nav-padding { 
@@ -488,10 +488,12 @@ p.right { text-align: right; }
 #callout-1 {
 	display: block;
 	position: relative;
-	top: -200px;
+	background-image: url('/images/app-summary-3.png');
+	width: 200px;
+	height: 100px;
 }
 
-.callout-text {
+.callout-text, .callout-text-right {
 	color: #F8F4EF;
 	position: relative;
 	padding: 10px;
@@ -500,46 +502,50 @@ p.right { text-align: right; }
 }
 
 .callout-text#one {
-	top: -300px;
 	padding-top: 7px;
 }
 
 #callout-2 {
 	display: block;
 	position: relative;
-	top: -125px;
-}
-
-.callout-text#two {
-	top: -220px;
-	padding-left: 35px;
+	background-image: url('/images/app-summary-2.png');
+	width: 200px;
+	height: 100px;
+	top: -75px;
 }
 
 #callout-3 {
 	display: block;
 	position: relative;
-	top: -75px;
+	background-image: url('/images/app-summary-2.png');
+	width: 200px;
+	height: 100px;
 }
 
 #callout-1, #callout-2, #callout-3, #one, #two, #three {
 	cursor: pointer;
 }
 
-.callout-text#three {
-	top: -175px;
+.callout-text-right {
 	padding-left: 35px;
+}
+
+.callout-text-right#two {
+	padding-top: 4px;
 }
 
 .callout-div-right {
 	display: inline-block;
 	position: relative;
 	right: 20px;
+	top: -180px;
 }
 
 .callout-div-left {
 	display: inline-block;
 	position: relative;
 	left: 20px;
+	top: -250px;
 }
 
 h1.app {
