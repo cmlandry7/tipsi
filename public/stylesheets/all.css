@@ -122,6 +122,17 @@ a.button:hover {
 	font-family: 'TipsiRegular','Tipsi','Arial';
 }
 
+
+.t-font {
+	font-family: 'TipsiRegular','Tipsi','Arial';
+	font-size: 110%;
+}
+
+.ipsi-font {
+	margin-left: -.3em;
+}
+
+
 .light {
 	color: #712450;
 	opacity: 0.5;

@@ -99,7 +99,8 @@ Tipsi::Application.routes.draw do
   match "/vision" => "home#vision", :as => :vision
   match "/taste" => "home#taste", :as => :taste
   match "/community" => "home#community", :as => :community
-  match "/legal" => "home#legal", :as => :legal
+  match "/terms" => "home#terms", :as => :terms
+  match "/privacy" => "home#privacy", :as => :privacy
   match "/press" => "home#press", :as => :press
   
   # Sample of named route:

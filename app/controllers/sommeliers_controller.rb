@@ -22,7 +22,8 @@ class SommeliersController < ApplicationController
 
     def jesse_rodriguez
         @nav_page = 3
-        @sub_page = 3
+        @sub_page = 4
+        @title = "Jesse Rodriguez"
     end
 
     def michael_scaffidi
