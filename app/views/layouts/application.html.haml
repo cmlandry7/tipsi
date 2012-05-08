@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 %html
 %head
-    %title #{@title} | Tipsi
-    %link{ :href => "images/favicon.ico", :rel => "shortcut icon", :type => "image/ico" }
-    = stylesheet_link_tag "all"
-    = javascript_include_tag 'jquery-1.7.2.js', 'application.js'
-    = csrf_meta_tag
+	%title #{@title} | Tipsi
+	%link{ :href => "images/favicon.ico", :rel => "shortcut icon", :type => "image/ico" }
+	= stylesheet_link_tag "all"
+	= javascript_include_tag 'jquery-1.7.2.js', 'application.js'
+	= csrf_meta_tag
 %head
 %body   
-    .main-container
-        .content-background
-            .content-container
-                .header
-                    %a{ :href => "/" }
-                        =image_tag( "tipsi-logo.png", :class => "logo" )
-                    / = link_to "Login", root_path, { :class => "header-link" }
-                    / = link_to "Sign Up", root_path, { :class => "header-link" }
-                    %a{ :href => "/app"}
-                        =image_tag( "app-store-badge.png", :class => "app-store" )
-                = yield
-                .clear
-        .footer
-            %a{ :class => "footer-link", :href => "mailto:careers@wine-wiz.com" } Careers
-            %a{ :class => "footer-link", :href => "/app" } Store
-            %a{ :class => "footer-link", :href => "mailto:corporate@wine-wiz.com" } Partner
-            %a{ :class => "footer-link", :href => "mailto:info@wine-wiz.com" } Contact
-            / %a{ :class => "footer-link", :href => "/press" } Press
-            %a{ :class => "footer-link", :href => "/legal", :target => 'blank' } Legal
-            = image_tag( "light-icon.png", :class => "icon")
+	.main-container
+		.content-background
+			.content-container
+				.header
+					%a{ :href => "/" }
+						=image_tag( "tipsi-logo.png", :class => "logo" )
+					/ = link_to "Login", root_path, { :class => "header-link" }
+					/ = link_to "Sign Up", root_path, { :class => "header-link" }
+					%a{ :href => "/app"}
+						=image_tag( "app-store-badge.png", :class => "app-store" )
+				= yield
+				.clear
+		.footer
+			%a{ :class => "footer-link", :href => "mailto:careers@wine-wiz.com" } Careers
+			%a{ :class => "footer-link", :href => "/app" } Store
+			%a{ :class => "footer-link", :href => "mailto:corporate@wine-wiz.com" } Partner
+			%a{ :class => "footer-link", :href => "mailto:info@wine-wiz.com" } Contact
+			/ %a{ :class => "footer-link", :href => "/press" } Press
+			%a{ :class => "footer-link", :href => "/terms", :target => 'blank' } Terms
+			%a{ :class => "footer-link", :href => "/privacy", :target => 'blank' } Privacy
+			= image_tag( "light-icon.png", :class => "icon")

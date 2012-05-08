@@ -1,13 +1,17 @@
 %h1.headline.tipsi-font
-    Drink smart.  Get 
-    %a{ :href => "/app", :class => "color-link" } Tipsi.
+	Drink smart.  Get 
+	%a{ :href => "/app", :class => "color-link" }
+		%span.t-font T 
+		%span.ipsi-font ipsi.
 
 = image_tag("iphone.png", :class => "iphone-image" )
 .home-content.tipsi-font
-    %h2 
-        Learn more about 
-        %a{ :href => "/app", :class => "color-link" } Tipsi, 
-        your personal sommelier.
-    .clear
+	%h2 
+		Learn more about 
+		%a{ :href => "/app", :class => "color-link" } 
+			%span.t-font T 
+			%span.ipsi-font ipsi,
+		your personal sommelier.
+	.clear
 .home-navigation
-    = render :partial => "shared/navigation"
+	= render :partial => "shared/navigation"

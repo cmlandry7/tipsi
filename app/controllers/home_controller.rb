@@ -23,13 +23,13 @@ class HomeController < ApplicationController
     end
 
     def taste
-        @title = "Taste analysis"
+        @title = "Taste Analysis"
         @nav_page = 4
         @status = 1
     end
 
     def app
-        @title = "Get the app"
+        @title = "Get the App"
         @nav_page = 2
     end
 
@@ -48,8 +48,12 @@ class HomeController < ApplicationController
         @title = "Press"
     end
 
-    def legal
-        @title = "Legal"
+    def terms
+        @title = "Terms of Service"
+    end
+    
+    def privacy
+        @title = "Privacy Policy"
     end
   
 end
