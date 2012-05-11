@@ -206,7 +206,6 @@ a img { border: none; }
 }
 
 .home-content h2 {
-	text-align: center;
 	font-size: 36px;
 }
 
@@ -493,6 +492,10 @@ p.right { text-align: right; }
 	margin: 20px;
 }
 
+.social-button.home {
+	margin-left: 40px;
+}
+
 /* ***************************************************
    **    TOUR THE APP PAGE
    *************************************************** */
@@ -542,7 +545,7 @@ p.right { text-align: right; }
 }
 
 .callout-text-right#two {
-	padding-top: 4px;
+	padding-top: 7px;
 }
 
 .callout-div-right {
@@ -566,7 +569,15 @@ h1.app {
 
 h4.app {
 	text-align: center;
-	margin: 0 0 0 10px;
+	margin: 5px 0 5px 10px;
+}
+
+.app a {
+	text-decoration: underline;
+}
+
+.app a:hover {
+	color: #a00533;
 }
 
 .callout-div-left h4, .callout-div-right h4 {

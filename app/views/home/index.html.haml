@@ -6,12 +6,17 @@
 
 = image_tag("iphone.png", :class => "iphone-image" )
 .home-content.tipsi-font
-	%h2 
+	%h2{ :style => "margin-bottom: 15px;"}
 		Learn more about 
 		%a{ :href => "/app", :class => "color-link" } 
 			%span.t-font T 
 			%span.ipsi-font ipsi,
 		your personal sommelier.
 	.clear
-.home-navigation
-	= render :partial => "shared/navigation"
+.left
+	.home-navigation
+		= render :partial => "shared/navigation"
+	%a{ :target => "_blank", :href => "http://www.facebook.com/gettipsi" }
+		%img.social-button.home{ :src => "/images/facebook.png" }
+	%a{ :target => "_blank", :href => "http://www.twitter.com/gettipsi" }
+		%img.social-button.home{ :src => "/images/twitter.png" }
