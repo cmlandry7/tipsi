@@ -1,0 +1,32 @@
+/ Navigation and subheader links
+= render :partial => "shared/navigation"
+
+/ Page content
+.page-content.taste
+	= render :partial => "shared/taste_links"
+	.wine-image
+		= image_tag("red-wine.png", :style => "width: 220px;")
+	.question-container.results
+		%h1.taste
+			Your pick: Cabernet Sauvignon
+			= @varietal
+		%p.light Aromas of violets and cedar with flavors of currants and chocolate
+		%p 
+			Personal picks: Dunn Vineyards, 1999. Howell Mountain
+			%break
+			Lake Anniversary Edition, Diamond Creek, 1992.  Napa Valley
+			%break
+			Pritchard Hill, Bryant Family, 1992.  Napa Valley
+		%p Region: #{@region} Bordeaux, Tuscany, Napa Valley, Sonoma County, Australia
+		%p{ :style => "margin-bottom:25px;"} Pairs perfectly with #{@pairing} meat dishes and grilled steak.
+		.question-content
+			%h1 Tipsi also recommends:
+			.other-varietals
+				%h3 Barbera d'Alba
+				%p Light Aromas of plum, cherry and spice with a lively acidity in the finish.
+				%span.light Pair with duck, quail, or squab with a cherry sauce
+			.other-varietals{ :style => "margin-left: 15px;"}
+				%h3 Pinot Noir
+				%p Cherry, black raspberry, aromas of spice and violets, soft tannins, acidity
+				%span.light Pair with grilled salmon or roast duck
+			.clear

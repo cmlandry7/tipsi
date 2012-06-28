@@ -22,6 +22,6 @@
 	- else   
 		.nav-padding
 			%a{ :href => "/sommeliers", :class => "nav-link"} Our sommeliers
+	%div{ :class => "#{@nav_page == 4 ? "nav-padding selected" : "nav-padding"}" }
+		%a{ :href => "/taste", :class => "#{@nav_page == 4 ? "nav-link bold" : "nav-link"}" } Taste analysis
 	.clear
-	/ %div{ :class => "#{@nav_page == 4 ? "nav-padding selected" : "nav-padding"}" }
-	/ 	%a{ :href => "/taste", :class => "#{@nav_page == 4 ? "nav-link bold" : "nav-link"}" } Taste analysis

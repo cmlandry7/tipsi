@@ -426,6 +426,19 @@ p.right { text-align: right; }
 	top: 4px;
 }
 
+.other-varietals {
+	float: left;
+	width: 48%;
+}
+
+.other-varietals p, .other-varietals h3 {
+	margin: 0;
+}
+
+.question-container.results p {
+	margin: 0;
+}
+
 /* ***************************************************
    **    SOMMELIER PAGES
    *************************************************** */
