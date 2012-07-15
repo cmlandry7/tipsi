@@ -1,0 +1,38 @@
+/ Navigation and subheader links
+= render :partial => "shared/navigation"
+
+/ Page content
+.page-content.taste
+	= render :partial => "shared/taste_links"
+	.wine-image
+		- if @color == "red"
+			= image_tag("red-wine.png", :style => "width: 220px;")
+		- else
+			= image_tag("white-wine.png")
+	.question-container.results
+		%h1.taste
+			Tipsi recommends:
+			= @first_pick
+		%p.description.light
+			= @notes
+		%h3
+			Personal picks: 
+		%ul 
+			%li Dunn Vineyards, 1999
+			%li Lake Anniversary Edition, Diamond Creek, 1992
+			%li Pritchard Hill, Bryant Family, 1992
+		.question-content
+			%h1 You may also enjoy:
+			.other-varietals
+				%h3
+					= @second_pick
+				%p.light
+					/ = @second_bottle
+					Chateau L'Evangile, 1999, Pomerol
+			.other-varietals{ :style => "margin-left: 15px;"}
+				%h3
+					= @third_pick
+				%p.light
+					/ = @third_bottle
+					Le CLos du Tue-Boeuf, 2010, Loire Valley
+			.clear

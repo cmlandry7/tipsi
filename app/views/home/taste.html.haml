@@ -3,15 +3,13 @@
 
 / Page content
 .page-content.taste
-    = render :partial => "shared/taste_links"
-    .wine-image
-        = image_tag("red-wine.png", :style => "width: 220px;")
-    .question-container
-        %h1.taste Color: red v. white
-        .clear
-        %p.light {red pairs well with beef, whereas wine generally pairs well with seafood}
-        .question-content
-            %h1.light I'm in the mood for...
-            .button-container
-                %a.button{ :href => "/taste/red" } Red
-                %a.button{ :href => "/taste/white" } White
+	= render :partial => "shared/taste_links"
+	.question-container
+		%h1.taste Taste Analysis
+		.clear
+		%p.light Tipsi recommends personalized wines based on your preferences.  If dining out, the selections will be tailored for your restaurant from Tipsi's menu database.
+		.question-content
+			%h1 Right now, I'm in the mood for...
+			.button-container
+				%a.button{ :href => "/taste/red" } Red
+				%a.button{ :href => "/taste/white" } White
