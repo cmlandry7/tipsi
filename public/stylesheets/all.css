@@ -337,6 +337,7 @@ p.right { text-align: right; }
 	top: 25px;
 	color: #4B003A;
 	font-size: 26px;
+	width: 500px;
 }
 
 .status-bar {
@@ -405,8 +406,9 @@ p.right { text-align: right; }
 	top: 0px;
 }
 
-.button-container {
-	
+.button-container a.button:hover {
+	background-color: #712450;
+	color: #F8F4EF;
 }
 
 .radio-container {
@@ -431,12 +433,40 @@ p.right { text-align: right; }
 	width: 48%;
 }
 
-.other-varietals p, .other-varietals h3 {
+.question-container.results .other-varietals h3 {
+	margin: 0;	
+	font-size: 16px;
+}
+
+.question-container.results h3 {
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+
+.other-varietals p {
+	font-size: 13px;
+	margin-top: 5px;
+}
+.question-container.results p {
+	color: #712450;
 	margin: 0;
 }
 
-.question-container.results p {
-	margin: 0;
+.question-container.results p.description {
+/*	font-style: italic;*/
+	font-size: 13px;
+}
+
+.question-container.results p.picks {
+	font-weight: bold;
+}
+
+.question-container.results ul {
+	list-style-type: none;
+	margin: 0 0 25px 0;
+	padding-left: 0;
+	color: #712450;
+	font-size: 16px;
 }
 
 /* ***************************************************
