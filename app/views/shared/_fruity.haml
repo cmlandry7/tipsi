@@ -3,16 +3,19 @@
 
 / Page content
 .page-content.taste
-    = render :partial => "shared/taste_links"
-    .wine-image
-        = image_tag("red-wine.png", :style => "width: 220px;")
-    .question-container
-        %h1.taste Fruity/Floral: the aroma, smell or bouquet of a wine
-        %p.light 
-            { fruit-forward wines exude strong smells of fresh fruit, 
-            and floral notes are similar to flowers in bloom }
-        .question-content
-            %h1.light Are you looking for a fruity/floral wine?
-            .button-container
-                %a.button{ :href => "#{@next_url_1}" } Yes
-                %a.button{ :href => "#{@next_url_2}" } No
+	= render :partial => "shared/taste_links"
+	.wine-image
+		- if @color == "red"
+			= image_tag("red-wine.png", :style => "width: 220px;")
+		- else
+			= image_tag("white-wine.png")
+	.question-container
+		%h1.taste Fruity/Floral: the aroma, smell or bouquet of a wine
+		%p.light 
+			Fruit-forward wines exude strong smells of fresh fruit, 
+			and floral notes are similar to flowers in bloom.
+		.question-content
+			%h1 Are you looking for a fruity/floral wine?
+			.button-container
+				%a.button{ :href => "#{@next_url_1}" } Yes
+				%a.button{ :href => "#{@next_url_2}" } No
