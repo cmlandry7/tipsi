@@ -5,10 +5,7 @@
 .page-content.taste
 	= render :partial => "shared/taste_links"
 	.wine-image
-		- if @color == "red"
-			= image_tag("red-wine.png", :style => "width: 220px;")
-		- else
-			= image_tag("white-wine.png")
+		= image_tag("#{@wine_image}")
 	.question-container.results
 		%h1.taste
 			Tipsi recommends:
@@ -17,10 +14,13 @@
 			= @notes
 		%h3
 			Personal picks: 
-		%ul 
-			%li Dunn Vineyards, 1999
-			%li Lake Anniversary Edition, Diamond Creek, 1992
-			%li Pritchard Hill, Bryant Family, 1992
+		%ol 
+			%li 
+				= @first_bottle_1
+			%li 
+				= @first_bottle_2
+			%li 
+				= @first_bottle_3
 		.question-content
 			%h1 You may also enjoy:
 			.other-varietals

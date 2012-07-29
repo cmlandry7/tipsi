@@ -461,10 +461,9 @@ p.right { text-align: right; }
 	font-weight: bold;
 }
 
-.question-container.results ul {
-	list-style-type: none;
+.question-container.results ol {
 	margin: 0 0 25px 0;
-	padding-left: 0;
+	padding-left: 20px;
 	color: #712450;
 	font-size: 16px;
 }
