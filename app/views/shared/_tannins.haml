@@ -4,11 +4,11 @@
 / Page content
 .page-content.taste
 	= render :partial => "shared/taste_links"
-	.wine-image
-		- if @color == "red"
-			= image_tag("red-wine.png", :style => "width: 220px;")
-		- else
-			= image_tag("white-wine.png")
+	/ .wine-image
+	/ 	- if @color == "red"
+	/ 		= image_tag("red-wine.png", :style => "width: 220px;")
+	/ 	- else
+	/ 		= image_tag("white-wine.png")
 	.question-container
 		%h1.taste Tannic/Earthy: bitter, dry, puckery feeling
 		%p.light 

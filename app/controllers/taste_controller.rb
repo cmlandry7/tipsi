@@ -581,7 +581,17 @@ class TasteController < ApplicationController
 
     def white_full_not_not_tannic
         @status = 5
+        @wine_image = "tannic-chardonnay.png"
         @title = "Taste analysis"
+        @first_pick = "Tannic Chardonnay"
+        @first_bottle_1 = "Domaine Bachelet-Monnot Maranges Blanc La Fussiere 2006"
+        @first_bottle_2 = "Domaine Paul Blanck Pinot Auxerrois Vieilles Vignes 2005"
+        @first_bottle_3 = "Domaine de la Bongran, Macon-Villages Tradition 2001"
+        @second_bottle = "Luna Vineyards, Freakout White Wine, Napa Valley 2002"
+        @second_pick = "Pinot Grigio/Friulano Biaco/Sauvignon Blanc"
+        @third_bottle = "Rietvallei Wine Estate, Sauvignon Blanc Special Select, Western Cape 2010"
+        @third_pick = "Sauvignon Blanc"
+        @notes = "Pale, bright yellow. Fresh aromas of white peach and pear. Sweet, broad and rich, with notes of spice and exotic flowers. The wine's phenolic, almost tannic impression and its firm acidity leaven its richness."
     end
 
     def white_soft_not_not_tannic
