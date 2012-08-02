@@ -221,7 +221,7 @@ a img { border: none; }
 }
 
 .home-navigation .nav-container {
-	margin: 0 0 0 30px;
+	margin: -15px 0 15px 30px;
 }
 
 .nav-padding {
@@ -238,7 +238,7 @@ a img { border: none; }
 }
 
 .home-navigation .nav-padding { 
-	height: 48px;
+	height: 36px;
 	margin-top: 10px; 
 }
 
@@ -332,6 +332,10 @@ p.right { text-align: right; }
    **    TASTE ANALYSIS PAGES
    *************************************************** */
 
+.page-content.taste {
+	text-align: center;
+}
+
 .page-content.taste h1 {
 	position: relative;
 	top: 25px;
@@ -386,8 +390,7 @@ p.right { text-align: right; }
 }
 
 .question-container {
-	float: left;
-	width: 420px;
+	padding: 0 10%;
 }
 
 .question-container p {
@@ -433,6 +436,11 @@ p.right { text-align: right; }
 	width: 48%;
 }
 
+.question-container.results {
+	width: 420px;
+	padding: 0;
+}
+
 .question-container.results .other-varietals h3 {
 	margin: 0;	
 	font-size: 16px;
@@ -462,8 +470,9 @@ p.right { text-align: right; }
 }
 
 .question-container.results ol {
+	list-style-type: none;
 	margin: 0 0 25px 0;
-	padding-left: 20px;
+	padding-left: 0;
 	color: #712450;
 	font-size: 16px;
 }

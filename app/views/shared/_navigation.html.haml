@@ -17,11 +17,10 @@
 		%div{ :class => "mini-nav-container" }
 			%a{ :href => "/sommeliers/anani-lawson", :class => "#{@sub_page == 1 ? "mini-nav-link bold" : "mini-nav-link"}" } Anani Lawson
 			%a{ :href => "/sommeliers/will-costello", :class => "#{@sub_page == 2 ? "mini-nav-link bold" : "mini-nav-link"}" } Will Costello
-			%a{ :href => "/sommeliers/christopher-hoel", :class => "#{@sub_page == 3 ? "mini-nav-link bold" : "mini-nav-link"}" } Christopher Hoel
 			%a{ :href => "/sommeliers/jesse-rodriguez", :class => "#{@sub_page == 4 ? "mini-nav-link bold" : "mini-nav-link"}" } Jesse Rodriguez
 	- else   
 		.nav-padding
 			%a{ :href => "/sommeliers", :class => "nav-link"} Our sommeliers
-	/ %div{ :class => "#{@nav_page == 4 ? "nav-padding selected" : "nav-padding"}" }
-	/ 	%a{ :href => "/taste", :class => "#{@nav_page == 4 ? "nav-link bold" : "nav-link"}" } Taste analysis
+	%div{ :class => "#{@nav_page == 4 ? "nav-padding selected" : "nav-padding"}" }
+		%a{ :href => "/taste", :class => "#{@nav_page == 4 ? "nav-link bold" : "nav-link"}" } Taste analysis
 	.clear
