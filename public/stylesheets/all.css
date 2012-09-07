@@ -433,11 +433,11 @@ p.right { text-align: right; }
 
 .other-varietals {
 	float: left;
-	width: 48%;
+	width: 46%;
 }
 
 .question-container.results {
-	width: 420px;
+	width: 460px;
 	padding: 0;
 }
 
@@ -455,6 +455,11 @@ p.right { text-align: right; }
 	font-size: 13px;
 	margin-top: 5px;
 }
+
+.other-varietals a:hover {
+	text-decoration: underline;
+}
+
 .question-container.results p {
 	color: #712450;
 	margin: 0;

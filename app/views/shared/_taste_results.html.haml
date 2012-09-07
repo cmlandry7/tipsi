@@ -25,14 +25,14 @@
 			%h1 You may also enjoy:
 			.other-varietals
 				%h3
-					= @second_pick
+					%a{ :href => "#{@second_pick_link}"}
+						= @second_pick
 				%p.light
-					/ = @second_bottle
-					Chateau L'Evangile, 1999, Pomerol
+					= @second_bottle
 			.other-varietals{ :style => "margin-left: 15px;"}
 				%h3
-					= @third_pick
+					%a{ :href => "#{@third_pick_link}"}
+						= @third_pick
 				%p.light
-					/ = @third_bottle
-					Le CLos du Tue-Boeuf, 2010, Loire Valley
+					= @third_bottle
 			.clear
